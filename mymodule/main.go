@@ -8,4 +8,9 @@ import (
 func main() {
 	fmt.Println("Hello, Modules!")
 	mypackage.PrintHello()
+
+	for true {
+
+		fmt.Println("Hello, Modules!")
+	}
 }

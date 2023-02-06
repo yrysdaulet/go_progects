@@ -1,2 +1,4 @@
+github.com/yrysdaulet/go_progects/mymodule v0.0.0-20230124065537-24fa618524e7 h1:Wc4RuMGH9lqjgjGSs428xgS6b3oXjZ1P6b+kXyFxTkM=
+github.com/yrysdaulet/go_progects/mymodule v0.0.0-20230124065537-24fa618524e7/go.mod h1:EXTYs++xSDpQN+/I5R3GfA0qLyJKPIPhUJs/Mc+iYpU=
 github.com/yrysdaulet/mymodules v0.0.0-20230124054206-2c08f99299fb h1:Jhm2qxFswcI4za2p4VGlwcDD6Ljo3Y93klPOm5fgoKg=
 github.com/yrysdaulet/mymodules v0.0.0-20230124054206-2c08f99299fb/go.mod h1:NpMPnCSQyUBCoBWQ+zzXt5dJIYq+Tlu2ylo+CI2O9iY=
