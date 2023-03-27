@@ -1,16 +1,10 @@
 package main
 
-import (
-	"fmt"
-	"github.com/yrysdaulet/go_progects/mymodule/mypackage"
-)
+import "fmt"
 
 func main() {
-	fmt.Println("Hello, Modules!")
-	mypackage.PrintHello()
-
-	for true {
-
-		fmt.Println("Hello, Modules!")
+	var arr [5]int
+	for i := 0; i < len(arr); i++ {
+		fmt.Println(arr[i])
 	}
 }
