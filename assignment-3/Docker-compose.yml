@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  app:
+    image: yrysdaulet/golang-app-assignment-3
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - PGHOST=localhost
+      - PGPORT=5432
+      - PGUSER=postgres
+      - PGPASSWORD=postgres
+      - PGDATABASE=assignment-3
+    restart: always
+  db:
+    image: postgres:alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=assignment-3
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+volumes:
+  postgres-data:

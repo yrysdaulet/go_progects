@@ -1,18 +1,17 @@
 FROM golang:1.20
 
-ENV GOPATH=/
+WORKDIR /app
 
 COPY ./ ./
-# Copy the Go module files
+
+COPY go.mod go.sum ./
+
 RUN go mod download
 
+COPY . .
 
-# Build the application
-RUN go build -o main .
+RUN go build -o app .
 
-
-# Expose port 8080 for the Gin HTTP server
 EXPOSE 8080
 
-# Set the command to run when the container starts
-CMD ["./main"]
+CMD ["./app"]

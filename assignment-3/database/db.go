@@ -10,7 +10,7 @@ import (
 var (
 	DB       *gorm.DB
 	dbError  error
-	psqlInfo string = "host=localhost user=postgres password=postgres dbname=assignment-3 port=5432 sslmode=disable "
+	psqlInfo string = "postgres://postgres:postgres@db:5432/assignment-3"
 )
 
 func Connect() {
